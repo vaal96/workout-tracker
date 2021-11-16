@@ -10,20 +10,19 @@ const WorkoutSchema = new Schema({
     {
       type: {
         type: String,
-        enum: ["cardio", "resistance"],
-        required: true,
+        trim: true,
+        required: "Enter an Exercise Type",
       },
       name: {
         type: String,
-        required: true,
+        required: "Enter Excercise Name",
         minLength: 1,
         maxLength: 40,
       },
       duration: {
         type: Number,
-        min: 0,
         default: 0,
-        required: true,
+        required: "Enter minutes",
       },
       distance: {
         type: Number,
