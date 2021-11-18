@@ -60,3 +60,4 @@ router.delete('/api/workouts', async (req, res) => {
   }
 })
 module.exports = router;
+
